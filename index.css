@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 html {
-    font-family: system-ui, Ubuntu;
+    font-family: Raleway;
+    font-weight: lighter;
     background-image: url("resources/images/bg1-img.png");
     background-size: cover;
     background-repeat: no-repeat;
