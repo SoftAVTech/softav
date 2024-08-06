@@ -172,12 +172,27 @@ main h1 b {
 }
 
 .service-element {
-    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
     width: 200px;
+    border-radius: 10px;
+    background-image: url("resources/images/service-bg.png");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 8px black;
 }
 
 .service-element img {
     height: 60px;
+    margin: 0;
+}
+
+.service-element h4 {
+    margin: 0;
 }
 
 @keyframes fadeIn {
