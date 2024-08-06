@@ -3,10 +3,7 @@
 html {
     font-family: Raleway;
     font-weight: lighter;
-    background-image: url("resources/images/bg1-img.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #0f1b23;
 }
 
 body {
@@ -52,9 +49,12 @@ nav {
 }
 
 main {
+    background-image: url("resources/images/bg1-img.png");
+    background-size:contain;
+    background-repeat: no-repeat;
     color: whitesmoke;
     padding: 20px;
-    height: 75vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -66,6 +66,8 @@ main h1 {
     margin-left: auto;
     font-weight: normal;
     text-shadow: 10px 10px 10px black;
+    opacity: 0;
+    animation: fadeIn 3s ease-out forwards;
 }
 
 main h1 b {
@@ -74,17 +76,50 @@ main h1 b {
 
 /* ABOUT SECTIONS CSS*/
 .about-section {
-    padding: 20px;
     color: whitesmoke;
+    background-color: #0f1b23;
 }
 
-.about-section h2 {
+.title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
+
+.title span {
+    color: #a22a35;
+}
+
+.about-section .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about-img {
+    max-height: 400px;
+    flex: 1;
+    filter: grayscale(0.7);
+    object-fit: cover;
+}
+
+.about-description {
+    flex: 1;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 75%;
+    margin: auto;
+}
+
+/*.about-section h2 {
     font-weight: normal;
     text-align: center;
     font-size: 40px;
 }
 
-.about-section h2 div {
+.about-section h2 span {
     color: #a22a35;
     text-shadow: 10px 10px 10px black;
 }
@@ -99,6 +134,12 @@ main h1 b {
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
+}
+
+@media (max-width:800px) {
+    .services .service-object {
+        display: block;
+    }
 }
 
 .services div h3 {
@@ -144,4 +185,16 @@ main h1 b {
 .description {
     line-height: 1.5;
     max-width: 600px;
+}*/
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

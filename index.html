@@ -5,6 +5,8 @@
 
         <link rel="icon" type="image/x-icon" href="resources/images/logo.png">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>           
     </head>
 
     <body>
@@ -29,7 +31,16 @@
         </main>
 
         <section class="about-section">
-            <h2>We offer our <span>best quality</span> and <span>good testing processes</span> for your products</h2>
+            <h2 class="title" data-aos="fade-up">We offer our <span>best quality</span> and <span>good testing processes</span> for your products</h2>
+            <div class="content">
+                <img src="resources/images/coding1.jpg" id="about-img" data-aos="fade-up">
+                <p class="about-description" data-aos="fade-up">
+                    We are a team of passionate quality assurance experts with a mission to set new standards in software testing. Combining years of industry 
+                    experience with a forward-thinking approach, we leverage the latest tools, technologies, and methodologies to uncover and address potential 
+                    issues before they reach your end users.
+                </p>
+            </div>
+            <!--<h2>We offer our <span>best quality</span> and <span>good testing processes</span> for your products</h2>
         
             <div class="services">
                 <div class="service-object">
@@ -66,7 +77,28 @@
 
                     <img class="r-img" src="resources/images/quality.jpg">
                 </div>
-            </div>
+
+                <div class="service-object">
+                    <img class="l-img" src="resources/images/consult.jpg">
+
+                    <div class="r-content">
+                        <h3>Performance Testing</h3>
+                        <div>
+                            <p class="description">
+                                Quality Assurance (QA) consulting is crucial because it ensures that software products meet the highest standards of quality, 
+                                reliability, and performance. By leveraging expert insights and best practices, QA consultants identify and mitigate potential issues 
+                                early in the development cycle, reducing the risk of costly defects and enhancing user satisfaction. Their expertise helps streamline 
+                                testing processes, optimize test coverage, and implement effective quality strategies tailored to specific business needs. Ultimately, 
+                                QA consulting drives efficiency, fosters innovation, and ensures that end-users receive a seamless and high-quality experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
         </section>
+
+        <script>
+            AOS.init();
+        </script> 
     </body>
 </html>
