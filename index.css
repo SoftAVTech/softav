@@ -195,6 +195,50 @@ main h1 b {
     margin: 0;
 }
 
+
+/*FOOTER SECTION CSS*/
+footer {
+    color: whitesmoke;
+}
+
+footer .main-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+footer .main-div .copyright-div {
+    flex: 1;
+    font-size: 15px;
+}
+
+footer .main-div .img-div img {
+    height: 100px;
+}
+
+footer .main-div .icons-list {
+    flex: 1;
+}
+
+footer .main-div .icons-list .icon {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer .main-div .icons-list .icon:hover {
+    color: #a22a35;
+}
+
+footer .main-div .icons-list a i {
+    font-size: 25px;
+    padding: 5px;
+}
+
+footer .main-div .support-div {
+    font-size: 15px;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
