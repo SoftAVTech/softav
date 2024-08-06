@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 html {
-    font-family: Raleway, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: lighter;
     background-color: #0f1b23;
     margin: 0;
@@ -197,6 +197,7 @@ main h1 b {
 
 
 /*HELP SECTION CSS*/
+
 .help-section .title {
     color: #a22a35;
 }
@@ -242,6 +243,62 @@ main h1 b {
     text-align: right;
 }
 
+
+/*CONTACT SECTION CSS*/
+.contact-section {
+    padding: 20px;
+}
+
+.contact-section .title {
+    color: #a22a35;
+}
+
+.contact-section .contact-content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.contact-section .img-div {
+    flex: 1;
+}
+
+.contact-section .img-div img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact-section .text-area {
+    padding: 10px;
+    flex: 1;
+}
+
+.contact-section .text-area p {
+    margin: 5px;
+}
+
+.contact-section .social-media-area {
+    flex: 1;
+}
+
+.contact-section .social-media-area .icon {
+    text-decoration: none;
+}
+
+.contact-section .social-media-area .icon i {
+    font-size: 25px;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+.contact-section .social-media-area .icon i:hover {
+    color: #a22a35;
+}
+
 /*FOOTER SECTION CSS*/
 footer {
     color: whitesmoke;
@@ -261,24 +318,6 @@ footer .main-div .copyright-div {
 
 footer .main-div .img-div img {
     height: 100px;
-}
-
-footer .main-div .icons-list {
-    flex: 1;
-}
-
-footer .main-div .icons-list .icon {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-footer .main-div .icons-list .icon:hover {
-    color: #a22a35;
-}
-
-footer .main-div .icons-list a i {
-    font-size: 25px;
-    padding: 5px;
 }
 
 footer .main-div .support-div {
