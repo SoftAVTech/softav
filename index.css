@@ -1,0 +1,126 @@
+html {
+    font-family: system-ui, Ubuntu;
+    background-image: url("resources/images/bg1-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#logo {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.btn-list {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-list a {
+    text-decoration: none;
+    color: #a22a35;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.btn-list a:hover {
+    color: whitesmoke;
+}
+
+main {
+    color: whitesmoke;
+    padding: 20px;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+main h1 {
+    max-width: 70vw;
+    font-size: 5vw;
+    margin-right: 10px;
+    margin-left: auto;
+    font-weight: normal;
+    text-shadow: 10px 10px 10px black;
+}
+
+main h1 b {
+    color: #a22a35;
+}
+
+/* ABOUT SECTIONS CSS*/
+.about-section {
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.about-section h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-section h2 span {
+    color: #a22a35;
+    text-shadow: 10px 10px 10px black;
+}
+
+.services {
+    width: 80%;
+    margin: auto;
+}
+
+.services span {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.services span h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #a22a35;
+}
+
+.l-img, .r-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-color: whitesmoke;
+    border-width: 2px;
+    border-style: solid;
+    filter: grayscale(80%);
+}
+
+.r-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.l-content {
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+}
