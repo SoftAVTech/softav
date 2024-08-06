@@ -84,7 +84,7 @@ main h1 b {
     font-size: 40px;
 }
 
-.about-section h2 span {
+.about-section h2 div {
     color: #a22a35;
     text-shadow: 10px 10px 10px black;
 }
@@ -94,13 +94,14 @@ main h1 b {
     margin: auto;
 }
 
-.services span {
+.services .service-object {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     padding: 10px;
 }
 
-.services span h3 {
+.services div h3 {
     font-size: 30px;
     font-weight: normal;
     color: #a22a35;
@@ -122,8 +123,25 @@ main h1 b {
     padding: 20px;
 }
 
+.r-content h3 {
+    margin: 0;
+}
+
 .l-content {
     flex: 1;
-    text-align: right;
     padding: 20px;
+}
+
+.l-content h3 {
+    text-align: right;
+    margin: 0;
+}
+
+.l-content div {
+    float: right;
+}
+
+.description {
+    line-height: 1.5;
+    max-width: 600px;
 }
