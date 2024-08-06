@@ -140,7 +140,6 @@ main h1 b {
 #about-img {
     width: 100%;
     flex: 1;
-    filter: grayscale(0.7);
     object-fit: cover;
 }
 
