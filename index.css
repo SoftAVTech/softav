@@ -196,6 +196,52 @@ main h1 b {
 }
 
 
+/*HELP SECTION CSS*/
+.help-section .title {
+    color: #a22a35;
+}
+
+.help-content {
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.help-element {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.help-element img {
+    height: 250px;
+    border-radius: 10px;
+}
+
+.sub-title {
+    color: #a22a35;
+    font-size: 20px;
+}
+
+.help-element .text-area {
+    padding: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.help-element .text-area p {
+    line-height: 1.5;
+    text-align: left;
+}
+
+#right-child {
+    text-align: right;
+}
+
+#right-child p {
+    text-align: right;
+}
+
 /*FOOTER SECTION CSS*/
 footer {
     color: whitesmoke;
