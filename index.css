@@ -88,8 +88,6 @@ main {
     color: whitesmoke;
     padding: 20px;
     height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
 main h1 {
@@ -106,6 +104,8 @@ main h1 {
 main h1 b {
     color: #a22a35;
 }
+
+/* ABOUT SECTION CSS*/
 
 .about-section {
     color: whitesmoke;
