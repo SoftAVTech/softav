@@ -6,6 +6,7 @@ html {
     background-color: #0f1b23;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -83,8 +84,7 @@ nav {
 
 main {
     background-image: url("resources/images/bg1-img.png");
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     color: whitesmoke;
     padding: 20px;
     height: 100vh;
@@ -113,7 +113,7 @@ main h1 b {
 }
 
 .title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: normal;
     text-align: center;
     text-shadow: 10px 10px 10px black;
@@ -125,7 +125,7 @@ main h1 b {
 
 .about-section .content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -151,6 +151,34 @@ main h1 b {
     text-align: center;
     line-height: 1.5;
     max-width: 75%;
+}
+
+
+/* SERVICES SECTION CSS*/
+.services-section {
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.services-section .title {
+    color: #a22a35;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.service-element {
+    text-align: center;
+    width: 200px;
+}
+
+.service-element img {
+    height: 60px;
 }
 
 @keyframes fadeIn {
@@ -179,7 +207,7 @@ main h1 b {
         display: none; /* Hide nav links by default on small screens */
         flex-direction: column;
         width: 100%;
-        /*background-color: #1a2a36;*/
+        background-color:#0f1b23;
         position: absolute;
         top: 60px;
         left: 0;
