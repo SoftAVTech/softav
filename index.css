@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 html {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: lighter;
     background-color: #0f1b23;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
-    height: 100vh;
+    padding: 0;
 }
 
 nav {
@@ -16,6 +18,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
+    /*background-color: #1a2a36;*/
 }
 
 .nav-title {
@@ -28,9 +31,38 @@ nav {
 #logo {
     height: 80px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
-.btn-list {
+.menu-btn {
+    display: none; /* Hide menu button by default */
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #a22a35;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.nav-links a:hover {
+    color: whitesmoke;
+}
+
+/*.btn-list {
     flex: 1;
     display: flex;
     align-items: center;
@@ -41,29 +73,30 @@ nav {
     text-decoration: none;
     color: #a22a35;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    margin: 0 5px;
 }
 
 .btn-list a:hover {
     color: whitesmoke;
-}
+}*/
 
 main {
     background-image: url("resources/images/bg1-img.png");
-    background-size:contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: whitesmoke;
     padding: 20px;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
 
 main h1 {
-    max-width: 70vw;
-    font-size: 5vw;
-    margin-right: 10px;
+    width: 70%;
+    margin-right: 20px;
     margin-left: auto;
+    font-size: 5vw;
     font-weight: normal;
     text-shadow: 10px 10px 10px black;
     opacity: 0;
@@ -74,14 +107,13 @@ main h1 b {
     color: #a22a35;
 }
 
-/* ABOUT SECTIONS CSS*/
 .about-section {
     color: whitesmoke;
     background-color: #0f1b23;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 30px;
     font-weight: normal;
     text-align: center;
     text-shadow: 10px 10px 10px black;
@@ -94,10 +126,19 @@ main h1 b {
 .about-section .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .content div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 #about-img {
-    max-height: 400px;
+    width: 100%;
     flex: 1;
     filter: grayscale(0.7);
     object-fit: cover;
@@ -105,88 +146,12 @@ main h1 b {
 
 .about-description {
     flex: 1;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
     text-align: center;
     line-height: 1.5;
     max-width: 75%;
-    margin: auto;
 }
-
-/*.about-section h2 {
-    font-weight: normal;
-    text-align: center;
-    font-size: 40px;
-}
-
-.about-section h2 span {
-    color: #a22a35;
-    text-shadow: 10px 10px 10px black;
-}
-
-.services {
-    width: 80%;
-    margin: auto;
-}
-
-.services .service-object {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
-}
-
-@media (max-width:800px) {
-    .services .service-object {
-        display: block;
-    }
-}
-
-.services div h3 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #a22a35;
-}
-
-.l-img, .r-img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border-color: whitesmoke;
-    border-width: 2px;
-    border-style: solid;
-    filter: grayscale(80%);
-}
-
-.r-content {
-    flex: 1;
-    padding: 20px;
-}
-
-.r-content h3 {
-    margin: 0;
-}
-
-.l-content {
-    flex: 1;
-    padding: 20px;
-}
-
-.l-content h3 {
-    text-align: right;
-    margin: 0;
-}
-
-.l-content div {
-    float: right;
-}
-
-.description {
-    line-height: 1.5;
-    max-width: 600px;
-}*/
-
 
 @keyframes fadeIn {
     from {
@@ -196,5 +161,65 @@ main h1 b {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) {
+    .btn-list {
+        display: none; /* Hide the button list for small screens */
+    }
+
+    .menu-btn {
+        display: block; /* Show the menu button on small screens */
+        margin-right: 20px;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        /*background-color: #1a2a36;*/
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when the menu button is clicked */
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #a22a35;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    main h1 {
+        font-size: 9vw;
+        width: 80%;
+    }
+
+    .about-section .content {
+        display: block;
+    }
+
+    .about-description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    main h1 {
+        font-size: 10vw;
+    }
+
+    .about-description {
+        font-size: 15px;
     }
 }
