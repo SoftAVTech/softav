@@ -316,15 +316,14 @@ footer .main-div {
 footer .main-div .copyright-div {
     flex: 1;
     font-size: 15px;
+    display: flex;
+    align-items: center;
 }
 
-footer .main-div .img-div img {
+footer .main-div .copyright-div img {
     height: 100px;
 }
 
-footer .main-div .support-div {
-    font-size: 15px;
-}
 
 @keyframes fadeIn {
     from {
