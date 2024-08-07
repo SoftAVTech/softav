@@ -289,14 +289,16 @@ main h1 b {
     text-decoration: none;
 }
 
-.contact-section .social-media-area .icon i {
-    font-size: 25px;
-    margin: 10px;
+.contact-section .social-media-area .icon img {
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
     color: whitesmoke;
 }
 
-.contact-section .social-media-area .icon i:hover {
-    color: #a22a35;
+.contact-section .social-media-area .icon img:hover {
+    background-color: #a22a35;
 }
 
 /*FOOTER SECTION CSS*/
