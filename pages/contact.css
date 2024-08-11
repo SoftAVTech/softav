@@ -15,6 +15,7 @@ main .main-content .content-item {
 
 .content-item div {
     flex: 1;
+    padding: 10px;
 }
 
 .content-item .left-div {
@@ -29,6 +30,7 @@ main .main-content .content-item {
 
 .title-div .icon {
     height: 50px;
+    padding: 5px;
 }
 
 .title-div h3 {
@@ -43,7 +45,12 @@ main .main-content .content-item {
 
 .banner-div {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+}
+
+.right-banner-div {
+    display: flex;
+    justify-content: start;
 }
 
 .banner {
@@ -52,9 +59,8 @@ main .main-content .content-item {
     height: auto;
     min-width: 200px;
     object-fit: contain;
-    margin: auto;
+    /*margin: auto;*/
     border-radius: 10px;
-    border-style: solid;
 }
 
 .content-item .button {
@@ -73,7 +79,19 @@ main .main-content .content-item {
 }
 
 @media (max-width: 600px) {
+    main {
+        padding: 0px;
+    }
+    main .main-content {
+        width: auto;
+        padding: 0px;
+    }
+
     main .main-content .content-item {
         display: block;
+    }
+
+    .banner-div, .right-banner-div {
+        display: none;
     }
 }

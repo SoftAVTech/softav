@@ -13,3 +13,26 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/*FOOTER SECTION CSS*/
+footer {
+    color: whitesmoke;
+}
+
+footer .main-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+footer .main-div .copyright-div {
+    flex: 1;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+footer .main-div .copyright-div img {
+    height: 100px;
+}
